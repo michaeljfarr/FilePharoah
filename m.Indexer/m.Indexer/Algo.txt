@@ -1,0 +1,12 @@
+﻿rank all the nodes in terms of the total number of child folder nodes - treat subfolders as children if the ratio of folders to files is 80% or greater
+  with the folder with the most check that nothing in the parent chain is already has a node index
+	 write a node index if it isn't, and one for all its siblings
+  remove all these nodes from the count, then re-rank
+	 
+
+If 90% of the files in a folder are X files then that folder and all its folders is a X folder
+If 90% of a folders contents is X folders, then it is a X folder (immediate children only)
+
+A folder that contains a .git folder is under version control and is automatically excluded, as ar all its children.  However we mark the folder and the URL of the git repository.
+
+Directories with a whole bunch of xml, dll and exe files in them are programs.
